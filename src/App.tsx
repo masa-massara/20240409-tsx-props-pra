@@ -1,6 +1,7 @@
 import "./App.css";
 // import DashBoard from "./Components/DashBoard";
 import Status from "./Status";
+import Text from "./Components/Text";
 
 function App() {
   // const name = { firstName: "山田", lastName: "太郎" };
@@ -20,7 +21,8 @@ function App() {
       /> */}
       {/* <DashBoard username="my name" notification={10} name={{ firstName: "山田", lastName: "太郎" }} /> */}
       {/* という形で渡しても出力は同じ */}
-      <Status status={"success"} />
+      {/* <Status status={"success"} /> */}
+      <Text>チルドレン</Text>
     </>
   );
 }
