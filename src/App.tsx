@@ -3,6 +3,7 @@ import "./App.css";
 import Status from "./Status";
 import Text from "./Components/Text";
 import Wrapper from "./Components/Wrapper";
+import Event from "./Event";
 
 function App() {
   // const name = { firstName: "山田", lastName: "太郎" };
@@ -23,9 +24,14 @@ function App() {
       {/* <DashBoard username="my name" notification={10} name={{ firstName: "山田", lastName: "太郎" }} /> */}
       {/* という形で渡しても出力は同じ */}
       {/* <Status status={"success"} /> */}
-      <Wrapper>
+      {/* <Wrapper>
         <Text>チルドレン</Text>
-      </Wrapper>
+      </Wrapper> */}
+      <Event
+        click={() => {
+          alert("OK");
+        }}
+      />
     </>
   );
 }
