@@ -28,8 +28,8 @@ function App() {
         <Text>チルドレン</Text>
       </Wrapper> */}
       <Event
-        click={() => {
-          alert("OK");
+        click={(e, text) => {
+          alert(text);
         }}
       />
     </>
