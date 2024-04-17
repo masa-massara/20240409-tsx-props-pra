@@ -4,6 +4,7 @@ import Status from "./Status";
 import Text from "./Components/Text";
 import Wrapper from "./Components/Wrapper";
 import Event from "./Event";
+import StyleProps from "./Components/StyleProps";
 
 function App() {
   // const name = { firstName: "山田", lastName: "太郎" };
@@ -27,11 +28,12 @@ function App() {
       {/* <Wrapper>
         <Text>チルドレン</Text>
       </Wrapper> */}
-      <Event
+      {/* <Event
         click={(e, text) => {
           alert(text);
         }}
-      />
+      /> */}
+      <StyleProps style={{ fontSize: 40 }} />
     </>
   );
 }
